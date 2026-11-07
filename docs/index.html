@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="HiLabs case management workbench with six fictional cases.">
+  <title>HiLabs Care Workbench</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to workspace</a>
+<div class="shell">
+  <aside class="side">
+    <div class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2.5-6 4 12 2.5-6H21"/></svg></span>
+      <div><strong>HiLabs</strong><span>CARE WORKBENCH</span></div>
+    </div>
+    <p class="nav-label">WORKSPACE</p>
+    <nav id="nav" aria-label="Workspace"></nav>
+    <div class="side-foot"><span class="dot"></span> Simulation environment<div>APM case study</div></div>
+  </aside>
+  <div class="body">
+    <header class="top">
+      <span id="crumb">Care management</span>
+      <div class="top-right">
+        <span class="sim">SYNTHETIC DEMO</span>
+        <button id="reset" class="quiet" type="button">Reset demo</button>
+        <span class="profile" aria-hidden="true">MC</span>
+        <div class="profile-label"><b>Maria Chen, RN</b><small>Case manager</small></div>
+      </div>
+    </header>
+    <main id="main" tabindex="-1" aria-busy="true"><p class="empty">Loading the workbench…</p></main>
+    <footer>HiLabs APM case study · Fictional records · Demo changes saved in this browser · Simulated outreach and partner updates</footer>
+  </div>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<dialog id="modal" aria-labelledby="modal-title"></dialog>
+</body>
+</html>

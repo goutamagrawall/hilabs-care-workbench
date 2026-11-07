@@ -1,0 +1,13 @@
+{
+  "name": "hilabs-care-workbench-pages",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test tests/workbench.test.mjs tests/browser-storage.test.mjs",
+    "test:browser": "node tests/browser.mjs"
+  },
+  "devDependencies": {"esbuild":"0.27.2", "playwright":"1.62.1"}
+}
